@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+//import ReactPaginate from 'react-paginate';
 
 export default function SearchComponent(props) {
     const [search, setSearch] = useState(null);
@@ -24,24 +25,8 @@ export default function SearchComponent(props) {
     };
 
 
-         return(
-            <div>
-                <div>
-                    <input placeholder="Search" onChange={filter} />
-                </div>
-                <div>
-                    <h1>Products</h1>
-                    {search.map(item =>
-                        <ul>
-                            <li>{item.name}</li>
-                            <li>{item.details}</li>
-                            <li>{item.price}</li>
-                            <li>{item.location}</li>
-                        </ul>
-                    )}
-                </div>
-            </div>
+    return (
+            <div></div>
         );
-
            
     }
